@@ -102,6 +102,8 @@
 
     NSString *language = self.dataAry[indexPath.row];
     [kInternationalizationManager setUserlanguage:language];
+    
+    [self cancleButtonAction:nil];
 }
 
 - (void)cancleButtonAction:(UIButton *)button {

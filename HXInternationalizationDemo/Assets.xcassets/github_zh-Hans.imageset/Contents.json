@@ -2,16 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "github_zh-Hans.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "details_promotion_ru@2x.png",
+      "filename" : "github_zh-Hans@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "details_promotion_ru@3x.png",
+      "filename" : "github_zh-Hans@3x.png",
       "scale" : "3x"
     }
   ],

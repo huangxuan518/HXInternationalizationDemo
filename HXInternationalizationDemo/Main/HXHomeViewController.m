@@ -43,7 +43,12 @@
     self.navigationItem.rightBarButtonItem = item;
     
     _titleLabel.text = kLocalizedString(@"welcome",@"你好 世界!");
-    _icoImageView.image = [kInternationalizationManager ittemInternationalImageWithName:@"details_promotion"];
+    _icoImageView.image = [kInternationalizationManager ittemInternationalImageWithName:@"github"];
+}
+
+- (IBAction)gotoGithub:(UITapGestureRecognizer *)sender {
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/huangxuan518"]];
 }
 
 - (void)didReceiveMemoryWarning {

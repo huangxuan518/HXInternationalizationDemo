@@ -17,33 +17,49 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="word" translatesAutoresizingMaskIntoConstraints="NO" id="YtS-7F-DkG">
+                    <rect key="frame" x="120" y="150" width="80" height="80"/>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5R-oI-m1j">
-                    <rect key="frame" x="135" y="93" width="50" height="21"/>
+                    <rect key="frame" x="135" y="260" width="50" height="20.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="21" id="BTh-SI-9iQ"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="OHh-Mv-P7n"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="ydS-kl-G9L"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Swd-ll-0b0">
-                    <rect key="frame" x="122" y="146" width="75" height="43"/>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Swd-ll-0b0">
+                    <rect key="frame" x="60" y="511" width="200" height="27"/>
+                    <gestureRecognizers/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="75" id="XfP-uu-Ial"/>
-                        <constraint firstAttribute="height" constant="43" id="opn-M2-OnG"/>
+                        <constraint firstAttribute="width" constant="200" id="f6i-hH-XTy"/>
+                        <constraint firstAttribute="height" constant="27" id="pWG-Er-xMU"/>
                     </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="9qW-EO-GB4" appends="YES" id="6RN-EM-nGZ"/>
+                    </connections>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="n5R-oI-m1j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="93" id="44z-Pn-JPG"/>
-                <constraint firstItem="Swd-ll-0b0" firstAttribute="top" secondItem="n5R-oI-m1j" secondAttribute="bottom" constant="32" id="7Fr-DC-seS"/>
-                <constraint firstItem="n5R-oI-m1j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iL6-Lz-RuQ"/>
-                <constraint firstItem="Swd-ll-0b0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="z2x-Qr-Mf6"/>
+                <constraint firstItem="YtS-7F-DkG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BhP-IE-nfw"/>
+                <constraint firstAttribute="bottom" secondItem="Swd-ll-0b0" secondAttribute="bottom" constant="30" id="KBn-Sh-8S5"/>
+                <constraint firstItem="n5R-oI-m1j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="R5P-Cd-uxo"/>
+                <constraint firstItem="Swd-ll-0b0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kNW-Bm-sgv"/>
+                <constraint firstItem="n5R-oI-m1j" firstAttribute="top" secondItem="YtS-7F-DkG" secondAttribute="bottom" constant="30" id="oF1-Sq-fzc"/>
+                <constraint firstItem="YtS-7F-DkG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="vwg-hY-sHX"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <tapGestureRecognizer id="9qW-EO-GB4">
+            <connections>
+                <action selector="gotoGithub:" destination="-1" id="lDY-56-MAf"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
+    <resources>
+        <image name="word" width="80" height="80"/>
+    </resources>
 </document>
