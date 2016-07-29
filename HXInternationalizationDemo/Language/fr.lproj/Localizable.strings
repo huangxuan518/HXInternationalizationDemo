@@ -6,5 +6,7 @@
   Copyright © 2016年 黄轩. All rights reserved.
 */
 
-"invite" ="hello atany,come to join in us!";
-"buttonInfo" ="change Language";
+"home" = "Page d'accueil";
+"welcome" = "Bonjour le monde!";
+"preference" = "De préférence";
+"cancel" = "Annuler";

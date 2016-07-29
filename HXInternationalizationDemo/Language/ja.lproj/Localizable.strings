@@ -6,5 +6,7 @@
   Copyright © 2016年 黄轩. All rights reserved.
 */
 
-"invite" ="你好 atany,快来加入我们吧！";
-"buttonInfo" ="切换语言";
+"home" = "ショウ' y";
+"welcome" = "こんにちは世界!";
+"preference" = "好み";
+"cancel" = "キャンセル";

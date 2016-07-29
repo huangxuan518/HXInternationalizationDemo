@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		E47A11001D49DB3C00470CE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A10FF1D49DB3C00470CE0 /* main.m */; };
 		E47A11031D49DB3C00470CE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A11021D49DB3C00470CE0 /* AppDelegate.m */; };
-		E47A11061D49DB3C00470CE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A11051D49DB3C00470CE0 /* ViewController.m */; };
 		E47A110B1D49DB3C00470CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47A110A1D49DB3C00470CE0 /* Assets.xcassets */; };
-		E47A11171D49DC0700470CE0 /* Hello.strings in Resources */ = {isa = PBXBuildFile; fileRef = E47A11191D49DC0700470CE0 /* Hello.strings */; };
-		E47A11251D49DD2600470CE0 /* InternationalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A11241D49DD2500470CE0 /* InternationalizationManager.m */; };
-		E47A11291D49DDD900470CE0 /* HXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A11271D49DDD900470CE0 /* HXHomeViewController.m */; };
-		E47A112A1D49DDD900470CE0 /* HXHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E47A11281D49DDD900470CE0 /* HXHomeViewController.xib */; };
+		E47A8E571D4AF05A00463A00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E47A8E501D4AF05A00463A00 /* Localizable.strings */; };
+		E47A8E5E1D4AF0A900463A00 /* HXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A8E5A1D4AF0A900463A00 /* HXHomeViewController.m */; };
+		E47A8E5F1D4AF0A900463A00 /* HXHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E47A8E5B1D4AF0A900463A00 /* HXHomeViewController.xib */; };
+		E47A8E601D4AF0A900463A00 /* HXInternationalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A8E5D1D4AF0A900463A00 /* HXInternationalizationManager.m */; };
+		E47A8E631D4AF13100463A00 /* HXPreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A8E621D4AF13100463A00 /* HXPreferenceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,19 +22,22 @@
 		E47A10FF1D49DB3C00470CE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E47A11011D49DB3C00470CE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E47A11021D49DB3C00470CE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E47A11041D49DB3C00470CE0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E47A11051D49DB3C00470CE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E47A110A1D49DB3C00470CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E47A110F1D49DB3C00470CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E47A11181D49DC0700470CE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Hello.strings; sourceTree = "<group>"; };
-		E47A111C1D49DC6600470CE0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Hello.strings"; sourceTree = "<group>"; };
-		E47A111F1D49DC6D00470CE0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Hello.strings"; sourceTree = "<group>"; };
-		E47A11221D49DC7600470CE0 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Hello.strings; sourceTree = "<group>"; };
-		E47A11231D49DD2500470CE0 /* InternationalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternationalizationManager.h; sourceTree = "<group>"; };
-		E47A11241D49DD2500470CE0 /* InternationalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternationalizationManager.m; sourceTree = "<group>"; };
-		E47A11261D49DDD900470CE0 /* HXHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXHomeViewController.h; sourceTree = "<group>"; };
-		E47A11271D49DDD900470CE0 /* HXHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXHomeViewController.m; sourceTree = "<group>"; };
-		E47A11281D49DDD900470CE0 /* HXHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXHomeViewController.xib; sourceTree = "<group>"; };
+		E47A8E511D4AF05A00463A00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E47A8E521D4AF05A00463A00 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E47A8E531D4AF05A00463A00 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E47A8E541D4AF05A00463A00 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E47A8E551D4AF05A00463A00 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E47A8E561D4AF05A00463A00 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E47A8E591D4AF0A900463A00 /* HXHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXHomeViewController.h; sourceTree = "<group>"; };
+		E47A8E5A1D4AF0A900463A00 /* HXHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXHomeViewController.m; sourceTree = "<group>"; };
+		E47A8E5B1D4AF0A900463A00 /* HXHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXHomeViewController.xib; sourceTree = "<group>"; };
+		E47A8E5C1D4AF0A900463A00 /* HXInternationalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXInternationalizationManager.h; sourceTree = "<group>"; };
+		E47A8E5D1D4AF0A900463A00 /* HXInternationalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXInternationalizationManager.m; sourceTree = "<group>"; };
+		E47A8E611D4AF13100463A00 /* HXPreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXPreferenceViewController.h; sourceTree = "<group>"; };
+		E47A8E621D4AF13100463A00 /* HXPreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXPreferenceViewController.m; sourceTree = "<group>"; };
+		E47A8E641D4B050D00463A00 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,16 +72,9 @@
 			children = (
 				E47A11011D49DB3C00470CE0 /* AppDelegate.h */,
 				E47A11021D49DB3C00470CE0 /* AppDelegate.m */,
-				E47A11041D49DB3C00470CE0 /* ViewController.h */,
-				E47A11051D49DB3C00470CE0 /* ViewController.m */,
-				E47A11261D49DDD900470CE0 /* HXHomeViewController.h */,
-				E47A11271D49DDD900470CE0 /* HXHomeViewController.m */,
-				E47A11281D49DDD900470CE0 /* HXHomeViewController.xib */,
-				E47A110A1D49DB3C00470CE0 /* Assets.xcassets */,
-				E47A110F1D49DB3C00470CE0 /* Info.plist */,
+				E47A8E581D4AF0A900463A00 /* Main */,
+				E47A8E4F1D4AF05A00463A00 /* Language */,
 				E47A10FE1D49DB3C00470CE0 /* Supporting Files */,
-				E47A11231D49DD2500470CE0 /* InternationalizationManager.h */,
-				E47A11241D49DD2500470CE0 /* InternationalizationManager.m */,
 			);
 			path = HXInternationalizationDemo;
 			sourceTree = "<group>";
@@ -86,10 +82,33 @@
 		E47A10FE1D49DB3C00470CE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E47A11191D49DC0700470CE0 /* Hello.strings */,
+				E47A110A1D49DB3C00470CE0 /* Assets.xcassets */,
+				E47A110F1D49DB3C00470CE0 /* Info.plist */,
 				E47A10FF1D49DB3C00470CE0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E47A8E4F1D4AF05A00463A00 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				E47A8E501D4AF05A00463A00 /* Localizable.strings */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		E47A8E581D4AF0A900463A00 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E47A8E591D4AF0A900463A00 /* HXHomeViewController.h */,
+				E47A8E5A1D4AF0A900463A00 /* HXHomeViewController.m */,
+				E47A8E5B1D4AF0A900463A00 /* HXHomeViewController.xib */,
+				E47A8E5C1D4AF0A900463A00 /* HXInternationalizationManager.h */,
+				E47A8E5D1D4AF0A900463A00 /* HXInternationalizationManager.m */,
+				E47A8E611D4AF13100463A00 /* HXPreferenceViewController.h */,
+				E47A8E621D4AF13100463A00 /* HXPreferenceViewController.m */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,9 @@
 				"zh-Hans",
 				"zh-Hant",
 				ko,
+				fr,
+				it,
+				ja,
 			);
 			mainGroup = E47A10F21D49DB3C00470CE0;
 			productRefGroup = E47A10FC1D49DB3C00470CE0 /* Products */;
@@ -153,8 +175,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E47A112A1D49DDD900470CE0 /* HXHomeViewController.xib in Resources */,
-				E47A11171D49DC0700470CE0 /* Hello.strings in Resources */,
+				E47A8E5F1D4AF0A900463A00 /* HXHomeViewController.xib in Resources */,
+				E47A8E571D4AF05A00463A00 /* Localizable.strings in Resources */,
 				E47A110B1D49DB3C00470CE0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,10 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E47A11061D49DB3C00470CE0 /* ViewController.m in Sources */,
-				E47A11291D49DDD900470CE0 /* HXHomeViewController.m in Sources */,
 				E47A11031D49DB3C00470CE0 /* AppDelegate.m in Sources */,
-				E47A11251D49DD2600470CE0 /* InternationalizationManager.m in Sources */,
+				E47A8E601D4AF0A900463A00 /* HXInternationalizationManager.m in Sources */,
+				E47A8E5E1D4AF0A900463A00 /* HXHomeViewController.m in Sources */,
+				E47A8E631D4AF13100463A00 /* HXPreferenceViewController.m in Sources */,
 				E47A11001D49DB3C00470CE0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,15 +199,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E47A11191D49DC0700470CE0 /* Hello.strings */ = {
+		E47A8E501D4AF05A00463A00 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E47A11181D49DC0700470CE0 /* en */,
-				E47A111C1D49DC6600470CE0 /* zh-Hans */,
-				E47A111F1D49DC6D00470CE0 /* zh-Hant */,
-				E47A11221D49DC7600470CE0 /* ko */,
+				E47A8E511D4AF05A00463A00 /* en */,
+				E47A8E521D4AF05A00463A00 /* fr */,
+				E47A8E531D4AF05A00463A00 /* it */,
+				E47A8E541D4AF05A00463A00 /* ko */,
+				E47A8E551D4AF05A00463A00 /* zh-Hans */,
+				E47A8E561D4AF05A00463A00 /* zh-Hant */,
+				E47A8E641D4B050D00463A00 /* ja */,
 			);
-			name = Hello.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -275,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HXInternationalizationDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -288,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HXInternationalizationDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;

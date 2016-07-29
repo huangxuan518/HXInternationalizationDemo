@@ -1,0 +1,12 @@
+/* 
+  Hello.strings
+  HXInternationalizationDemo
+
+  Created by 黄轩 on 16/7/28.
+  Copyright © 2016年 黄轩. All rights reserved.
+*/
+
+"home" = "首页";
+"welcome" = "你好 世界!";
+"preference" = "偏好";
+"cancel" = "取消";

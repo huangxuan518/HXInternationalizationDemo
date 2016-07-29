@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXHomeViewController">
             <connections>
-                <outlet property="changeLanguageButton" destination="rMo-LJ-WYg" id="bnM-YA-ayL"/>
                 <outlet property="icoImageView" destination="Swd-ll-0b0" id="a3A-1b-DXw"/>
                 <outlet property="titleLabel" destination="n5R-oI-m1j" id="Vpj-B8-xQB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -18,18 +17,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMo-LJ-WYg">
-                    <rect key="frame" x="135" y="172" width="50" height="30"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="7Be-0y-ADy"/>
-                        <constraint firstAttribute="height" constant="30" id="XHb-a8-ubu"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="changeLanguageButtonAction:" destination="-1" eventType="touchUpInside" id="ZE7-PS-4bf"/>
-                    </connections>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5R-oI-m1j">
                     <rect key="frame" x="135" y="93" width="50" height="21"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -42,7 +29,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Swd-ll-0b0">
-                    <rect key="frame" x="122" y="247" width="75" height="43"/>
+                    <rect key="frame" x="122" y="146" width="75" height="43"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="75" id="XfP-uu-Ial"/>
                         <constraint firstAttribute="height" constant="43" id="opn-M2-OnG"/>
@@ -52,10 +39,8 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="n5R-oI-m1j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="93" id="44z-Pn-JPG"/>
-                <constraint firstItem="Swd-ll-0b0" firstAttribute="top" secondItem="rMo-LJ-WYg" secondAttribute="bottom" constant="45" id="d7m-hT-64h"/>
-                <constraint firstItem="rMo-LJ-WYg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iB5-cY-g0x"/>
+                <constraint firstItem="Swd-ll-0b0" firstAttribute="top" secondItem="n5R-oI-m1j" secondAttribute="bottom" constant="32" id="7Fr-DC-seS"/>
                 <constraint firstItem="n5R-oI-m1j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iL6-Lz-RuQ"/>
-                <constraint firstItem="rMo-LJ-WYg" firstAttribute="top" secondItem="n5R-oI-m1j" secondAttribute="bottom" constant="58" id="uUo-rX-SW0"/>
                 <constraint firstItem="Swd-ll-0b0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="z2x-Qr-Mf6"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

@@ -1,26 +1,26 @@
 //
-//  InternationalizationManager.m
+//  HXInternationalizationManager.m
 //  HXInternationalizationDemo
 //
 //  Created by 黄轩 on 16/7/28.
 //  Copyright © 2016年 黄轩. All rights reserved.
 //
 
-#import "InternationalizationManager.h"
+#import "HXInternationalizationManager.h"
 
-#define NSLocalizedStringTableName @"Hello"
+#define NSLocalizedStringTableName @"Localizable"
 #define UserLanguage @"userLanguage"
 
-@interface InternationalizationManager ()
+@interface HXInternationalizationManager ()
 
 @property (nonatomic,strong) NSBundle *bundle;
 
 @end
 
-@implementation InternationalizationManager
+@implementation HXInternationalizationManager
 
 + (instancetype)shareInstance {
-    static InternationalizationManager *_manager = nil;
+    static HXInternationalizationManager *_manager = nil;
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
         _manager = [[self alloc] init];
@@ -47,40 +47,45 @@
 }
 
 //语言和语言对应的.lproj的文件夹前缀不一致时在这里做处理
-- (NSString *)languageFormat:(NSString*)lan {
-    if([lan rangeOfString:@"zh-Hans"].location != NSNotFound)
+- (NSString *)languageFormat:(NSString*)language {
+    if([language rangeOfString:@"zh-Hans"].location != NSNotFound)
     {
         return @"zh-Hans";
     }
-    else if([lan rangeOfString:@"zh-Hant"].location != NSNotFound)
+    else if([language rangeOfString:@"zh-Hant"].location != NSNotFound)
     {
         return @"zh-Hant";
     }
     else
     {
         //字符串查找
-        if([lan rangeOfString:@"-"].location != NSNotFound) {
+        if([language rangeOfString:@"-"].location != NSNotFound) {
             //除了中文以外的其他语言统一处理@"ru_RU" @"ko_KR"取前面一部分
-            NSArray *ary = [lan componentsSeparatedByString:@"_"];
+            NSArray *ary = [language componentsSeparatedByString:@"-"];
             if (ary.count > 1) {
                 NSString *str = ary[0];
                 return str;
             }
         }
     }
-    return lan;
+    return language;
 }
 
 //设置语言
 - (void)setUserlanguage:(NSString *)language {
 
-    if (![[self currentLanguage] isEqualToString:language] && _bundle) {
+    if (![[self currentLanguage] isEqualToString:language]) {
         [self saveLanguage:language];
         
         [self changeBundle:language];
         
         //改变完成之后发送通知，告诉其他页面修改完成，提示刷新界面
         [[NSNotificationCenter defaultCenter] postNotificationName:ChangeLanguageNotificationName object:nil];
+        
+        //回调
+        if (_completion) {
+            _completion(language);
+        }
     }
 }
 

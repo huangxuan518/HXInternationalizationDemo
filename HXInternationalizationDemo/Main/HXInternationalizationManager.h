@@ -1,5 +1,5 @@
 //
-//  InternationalizationManager.h
+//  HXInternationalizationManager.h
 //  HXInternationalizationDemo
 //
 //  Created by 黄轩 on 16/7/28.
@@ -12,15 +12,20 @@
 #define ChangeLanguageNotificationName @"changeLanguage"
 #define kLocalizedString(key, comment) [kInternationalizationManager localizedStringForKey:key value:comment]
 
-@interface InternationalizationManager : NSObject
+@interface HXInternationalizationManager : NSObject
 
-+ (instancetype)shareInstance;
+@property (nonatomic,copy) void (^completion)(NSString *currentLanguage);
 
+- (NSString *)currentLanguage; //当前语言
+- (NSString *)languageFormat:(NSString*)language;
 - (void)setUserlanguage:(NSString *)language;//设置当前语言
+
 - (NSString *)localizedStringForKey:(NSString *)key value:(NSString *)value;
 
 - (UIImage *)ittemInternationalImageWithName:(NSString *)name;
 
-#define kInternationalizationManager [InternationalizationManager shareInstance]
++ (instancetype)shareInstance;
+
+#define kInternationalizationManager [HXInternationalizationManager shareInstance]
 
 @end
