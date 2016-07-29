@@ -1,26 +1,26 @@
 //
-//  HXInternationalizationManager.m
+//  HXLanguageManager.m
 //  HXInternationalizationDemo
 //
 //  Created by 黄轩 on 16/7/28.
 //  Copyright © 2016年 黄轩. All rights reserved.
 //
 
-#import "HXInternationalizationManager.h"
+#import "HXLanguageManager.h"
 
 #define NSLocalizedStringTableName @"Localizable"
 #define UserLanguage @"userLanguage"
 
-@interface HXInternationalizationManager ()
+@interface HXLanguageManager ()
 
 @property (nonatomic,strong) NSBundle *bundle;
 
 @end
 
-@implementation HXInternationalizationManager
+@implementation HXLanguageManager
 
 + (instancetype)shareInstance {
-    static HXInternationalizationManager *_manager = nil;
+    static HXLanguageManager *_manager = nil;
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
         _manager = [[self alloc] init];

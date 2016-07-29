@@ -8,10 +8,11 @@
 
 #import "HXHomeViewController.h"
 #import "HXPreferenceViewController.h"
-#import "HXInternationalizationManager.h"
+#import "HXLanguageManager.h"
 
 @interface HXHomeViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *worldImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *icoImageView;
 
@@ -26,8 +27,23 @@
     
     //注册通知，用于接收改变语言的通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage) name:ChangeLanguageNotificationName object:nil];
+    
+    [self setWorldImageViewAnimation];
 
     [self changeLanguage];
+}
+
+//设置动画
+- (void)setWorldImageViewAnimation {
+    NSArray *array = [NSArray arrayWithObjects:
+                      [UIImage imageNamed:@"world_1"],
+                      [UIImage imageNamed:@"world_2"],
+                      [UIImage imageNamed:@"world_3"],
+                      [UIImage imageNamed:@"world_4"],
+                      nil];
+    [_worldImageView setAnimationImages:array];
+    [_worldImageView setAnimationDuration:1.5];
+    [_worldImageView startAnimating];
 }
 
 - (void)gotoPreferenceViewController {
@@ -43,7 +59,7 @@
     self.navigationItem.rightBarButtonItem = item;
     
     _titleLabel.text = kLocalizedString(@"welcome",@"你好 世界!");
-    _icoImageView.image = [kInternationalizationManager ittemInternationalImageWithName:@"github"];
+    _icoImageView.image = [kLanguageManager ittemInternationalImageWithName:@"github"];
 }
 
 - (IBAction)gotoGithub:(UITapGestureRecognizer *)sender {

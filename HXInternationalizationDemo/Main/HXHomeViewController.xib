@@ -10,6 +10,7 @@
                 <outlet property="icoImageView" destination="Swd-ll-0b0" id="a3A-1b-DXw"/>
                 <outlet property="titleLabel" destination="n5R-oI-m1j" id="Vpj-B8-xQB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="worldImageView" destination="YtS-7F-DkG" id="2Gm-5F-Svg"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -17,11 +18,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="word" translatesAutoresizingMaskIntoConstraints="NO" id="YtS-7F-DkG">
-                    <rect key="frame" x="120" y="150" width="80" height="80"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="world_1" translatesAutoresizingMaskIntoConstraints="NO" id="YtS-7F-DkG">
+                    <rect key="frame" x="85" y="150" width="150" height="150"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5R-oI-m1j">
-                    <rect key="frame" x="135" y="260" width="50" height="20.5"/>
+                    <rect key="frame" x="135" y="330" width="50" height="20.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="ydS-kl-G9L"/>
@@ -60,6 +61,6 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="word" width="80" height="80"/>
+        <image name="world_1" width="150" height="150"/>
     </resources>
 </document>

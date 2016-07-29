@@ -13,7 +13,7 @@
 		E47A8E571D4AF05A00463A00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E47A8E501D4AF05A00463A00 /* Localizable.strings */; };
 		E47A8E5E1D4AF0A900463A00 /* HXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A8E5A1D4AF0A900463A00 /* HXHomeViewController.m */; };
 		E47A8E5F1D4AF0A900463A00 /* HXHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E47A8E5B1D4AF0A900463A00 /* HXHomeViewController.xib */; };
-		E47A8E601D4AF0A900463A00 /* HXInternationalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A8E5D1D4AF0A900463A00 /* HXInternationalizationManager.m */; };
+		E47A8E601D4AF0A900463A00 /* HXLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A8E5D1D4AF0A900463A00 /* HXLanguageManager.m */; };
 		E47A8E631D4AF13100463A00 /* HXPreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A8E621D4AF13100463A00 /* HXPreferenceViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +33,8 @@
 		E47A8E591D4AF0A900463A00 /* HXHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXHomeViewController.h; sourceTree = "<group>"; };
 		E47A8E5A1D4AF0A900463A00 /* HXHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXHomeViewController.m; sourceTree = "<group>"; };
 		E47A8E5B1D4AF0A900463A00 /* HXHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXHomeViewController.xib; sourceTree = "<group>"; };
-		E47A8E5C1D4AF0A900463A00 /* HXInternationalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXInternationalizationManager.h; sourceTree = "<group>"; };
-		E47A8E5D1D4AF0A900463A00 /* HXInternationalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXInternationalizationManager.m; sourceTree = "<group>"; };
+		E47A8E5C1D4AF0A900463A00 /* HXLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXLanguageManager.h; sourceTree = "<group>"; };
+		E47A8E5D1D4AF0A900463A00 /* HXLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXLanguageManager.m; sourceTree = "<group>"; };
 		E47A8E611D4AF13100463A00 /* HXPreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXPreferenceViewController.h; sourceTree = "<group>"; };
 		E47A8E621D4AF13100463A00 /* HXPreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXPreferenceViewController.m; sourceTree = "<group>"; };
 		E47A8E641D4B050D00463A00 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 				E47A8E591D4AF0A900463A00 /* HXHomeViewController.h */,
 				E47A8E5A1D4AF0A900463A00 /* HXHomeViewController.m */,
 				E47A8E5B1D4AF0A900463A00 /* HXHomeViewController.xib */,
-				E47A8E5C1D4AF0A900463A00 /* HXInternationalizationManager.h */,
-				E47A8E5D1D4AF0A900463A00 /* HXInternationalizationManager.m */,
+				E47A8E5C1D4AF0A900463A00 /* HXLanguageManager.h */,
+				E47A8E5D1D4AF0A900463A00 /* HXLanguageManager.m */,
 				E47A8E611D4AF13100463A00 /* HXPreferenceViewController.h */,
 				E47A8E621D4AF13100463A00 /* HXPreferenceViewController.m */,
 			);
@@ -189,7 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E47A11031D49DB3C00470CE0 /* AppDelegate.m in Sources */,
-				E47A8E601D4AF0A900463A00 /* HXInternationalizationManager.m in Sources */,
+				E47A8E601D4AF0A900463A00 /* HXLanguageManager.m in Sources */,
 				E47A8E5E1D4AF0A900463A00 /* HXHomeViewController.m in Sources */,
 				E47A8E631D4AF13100463A00 /* HXPreferenceViewController.m in Sources */,
 				E47A11001D49DB3C00470CE0 /* main.m in Sources */,
