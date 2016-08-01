@@ -1,6 +1,6 @@
 //
 //  HXPreferenceViewController.h
-//  HXInternationalizationDemo
+//  https://github.com/huangxuan518/HXInternationalizationDemo
 //
 //  Created by 黄轩 on 16/7/29.
 //  Copyright © 2016年 黄轩. All rights reserved.

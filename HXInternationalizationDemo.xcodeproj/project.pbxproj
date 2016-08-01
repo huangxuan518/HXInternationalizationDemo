@@ -15,7 +15,6 @@
 		E47A8E5F1D4AF0A900463A00 /* HXHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E47A8E5B1D4AF0A900463A00 /* HXHomeViewController.xib */; };
 		E47A8E601D4AF0A900463A00 /* HXLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A8E5D1D4AF0A900463A00 /* HXLanguageManager.m */; };
 		E47A8E631D4AF13100463A00 /* HXPreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A8E621D4AF13100463A00 /* HXPreferenceViewController.m */; };
-		E47A8E681D4B611300463A00 /* xiaoguo.gif in Resources */ = {isa = PBXBuildFile; fileRef = E47A8E671D4B611300463A00 /* xiaoguo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +39,6 @@
 		E47A8E621D4AF13100463A00 /* HXPreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXPreferenceViewController.m; sourceTree = "<group>"; };
 		E47A8E641D4B050D00463A00 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E47A8E651D4B607D00463A00 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E47A8E671D4B611300463A00 /* xiaoguo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = xiaoguo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 		E47A10FE1D49DB3C00470CE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E47A8E671D4B611300463A00 /* xiaoguo.gif */,
 				E47A110A1D49DB3C00470CE0 /* Assets.xcassets */,
 				E47A110F1D49DB3C00470CE0 /* Info.plist */,
 				E47A10FF1D49DB3C00470CE0 /* main.m */,
@@ -183,7 +180,6 @@
 				E47A8E5F1D4AF0A900463A00 /* HXHomeViewController.xib in Resources */,
 				E47A8E571D4AF05A00463A00 /* Localizable.strings in Resources */,
 				E47A110B1D49DB3C00470CE0 /* Assets.xcassets in Resources */,
-				E47A8E681D4B611300463A00 /* xiaoguo.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
