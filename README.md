@@ -2,4 +2,4 @@
 国际化示例demo
 
 # 在线预览
-https://appetize.io/app/0pwu711y0avbvyv2xymepymf1c?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3
+https://appetize.io/app/0pwu711y0avbvyv2xymepymf1c
