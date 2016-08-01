@@ -46,12 +46,7 @@
     [_worldImageView startAnimating];
 }
 
-- (void)gotoPreferenceViewController {
-    HXPreferenceViewController *vc = [HXPreferenceViewController new];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    [self.navigationController presentViewController:nav animated:YES completion:nil];
-}
-
+//改变语言界面刷新
 - (void)changeLanguage {
     self.title = kLocalizedString(@"home",@"首页");
     
@@ -62,6 +57,16 @@
     _icoImageView.image = [kLanguageManager ittemInternationalImageWithName:@"github"];
 }
 
+#pragma mark - goto
+
+//去偏好设置界面
+- (void)gotoPreferenceViewController {
+    HXPreferenceViewController *vc = [HXPreferenceViewController new];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self.navigationController presentViewController:nav animated:YES completion:nil];
+}
+
+//去本人github页面
 - (IBAction)gotoGithub:(UITapGestureRecognizer *)sender {
     
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/huangxuan518"]];

@@ -35,9 +35,9 @@
     
     if(currentLanguage.length == 0){
         
-        //获取系统当前语言版本(中文zh-Hans,英文en)
+        //获取系统偏好语言数组
         NSArray *languages = [NSLocale preferredLanguages];
-        
+        //第一个为当前语言
         currentLanguage = [languages objectAtIndex:0];
         
         [self saveLanguage:currentLanguage];
@@ -110,6 +110,7 @@
     return language;
 }
 
+//获取当前语种下的内容
 - (NSString *)localizedStringForKey:(NSString *)key value:(NSString *)value {
     if (!_bundle) {
         [self initUserLanguage];
@@ -126,6 +127,7 @@
     return @"";
 }
 
+//图片多语言处理 有2种处理方案，第一种就是和文字一样，根据语言或者对应路径下的图片文件夹，然后用获取文字的方式，获取图片名字，或者用下面这种方法，图片命名的时候加上语言后缀，获取的时候调用此方法，在图片名后面加上语言后缀来显示图片
 - (UIImage *)ittemInternationalImageWithName:(NSString *)name {
     NSString *selectedLanguage = [self languageFormat:[self currentLanguage]];
     UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@",name,selectedLanguage]];
