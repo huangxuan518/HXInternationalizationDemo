@@ -153,7 +153,7 @@
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
     searchBar.showsCancelButton = YES;
     [self changeSearchBarCancleText:searchBar];
-    self.tableView.contentSize = CGSizeMake(0, [UIScreen mainScreen].bounds.size.height*1.5);
+    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.y, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 252);
 }
 
 //编辑文字改变的回调
@@ -172,7 +172,7 @@
     _searchText = nil;
     searchBar.text = nil;
     [self.view endEditing:YES];
-    self.tableView.contentSize = CGSizeMake(0, 0);
+    self.tableView.frame = [UIScreen mainScreen].bounds;
     [self.tableView reloadData];
 }
 
