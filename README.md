@@ -1,4 +1,4 @@
-# HXInternationalizationDemo 如果对你有一点点帮助,请给一颗★,你的支持是对我的最大鼓励！
+# HXInternationalizationDemo 如果对你有一点点帮助,请给一颗★,你的支持是对我的最大鼓励！推荐工具 iOS打包机器人 https://github.com/huangxuan518/HXPackRobot
 国际化示例demo
 
 # 在线预览
