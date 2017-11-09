@@ -33,7 +33,7 @@
 
 - (void)addSearchBar {
     UISearchBar *searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 44)];
-    searchBar.placeholder = kLocalizedString(@"search",@"搜索");
+    searchBar.placeholder = kLocalizedString(@"search");
     searchBar.delegate = self;
     self.tableView.tableHeaderView = searchBar;
     [self.view addSubview:self.tableView];
@@ -187,10 +187,10 @@
     for (UIView *view in [[searchBar.subviews lastObject] subviews]) {
         if ([view isKindOfClass:[UIButton class]]) {
             UIButton *cancelBtn = (UIButton *)view;
-            [cancelBtn setTitle:kLocalizedString(@"cancel",@"取消") forState:UIControlStateNormal];
-            [cancelBtn setTitle:kLocalizedString(@"cancel",@"取消") forState:UIControlStateHighlighted];
-            [cancelBtn setTitle:kLocalizedString(@"cancel",@"取消") forState:UIControlStateSelected];
-            [cancelBtn setTitle:kLocalizedString(@"cancel",@"取消") forState:UIControlStateDisabled];
+            [cancelBtn setTitle:kLocalizedString(@"cancel") forState:UIControlStateNormal];
+            [cancelBtn setTitle:kLocalizedString(@"cancel") forState:UIControlStateHighlighted];
+            [cancelBtn setTitle:kLocalizedString(@"cancel") forState:UIControlStateSelected];
+            [cancelBtn setTitle:kLocalizedString(@"cancel") forState:UIControlStateDisabled];
         }
     }
 }
@@ -238,8 +238,8 @@
 
 //刷新界面
 - (void)changeLanguage {
-    self.title = kLocalizedString(@"preference",@"偏好");
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:kLocalizedString(@"cancel",@"取消") style:UIBarButtonItemStyleDone target:self action:@selector(cancleButtonAction:)];
+    self.title = kLocalizedString(@"preference");
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:kLocalizedString(@"cancel") style:UIBarButtonItemStyleDone target:self action:@selector(cancleButtonAction:)];
     self.navigationItem.leftBarButtonItem = item;
     
     [self.tableView reloadData];

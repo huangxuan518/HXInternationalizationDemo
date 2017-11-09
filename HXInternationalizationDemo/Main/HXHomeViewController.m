@@ -48,12 +48,12 @@
 
 //改变语言界面刷新
 - (void)changeLanguage {
-    self.title = kLocalizedString(@"home",@"首页");
-    
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:kLocalizedString(@"preference",@"偏好") style:UIBarButtonItemStyleDone target:self action:@selector(gotoPreferenceViewController)];
+
+    self.title = kLocalizedTableString(@"home", @"HomeLocalizable");
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:kLocalizedTableString(@"preference",@"HomeLocalizable") style:UIBarButtonItemStyleDone target:self action:@selector(gotoPreferenceViewController)];
     self.navigationItem.rightBarButtonItem = item;
     
-    _titleLabel.text = kLocalizedString(@"welcome",@"你好 世界!");
+    _titleLabel.text = kLocalizedTableString(@"welcome",@"HomeLocalizable");
     _icoImageView.image = [kLanguageManager ittemInternationalImageWithName:@"github"];
 }
 

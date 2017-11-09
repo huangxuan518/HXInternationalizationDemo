@@ -10,7 +10,8 @@
 #import <UIKit/UIKit.h>
 
 #define ChangeLanguageNotificationName @"changeLanguage"
-#define kLocalizedString(key, comment) [kLanguageManager localizedStringForKey:key value:comment]
+#define kLocalizedString(key) [kLanguageManager localizedStringForKey:key]
+#define kLocalizedTableString(key,tableN) [kLanguageManager localizedStringForKey:key tableName:tableN]
 
 @interface HXLanguageManager : NSObject
 
@@ -20,7 +21,9 @@
 - (NSString *)languageFormat:(NSString*)language;
 - (void)setUserlanguage:(NSString *)language;//设置当前语言
 
-- (NSString *)localizedStringForKey:(NSString *)key value:(NSString *)value;
+- (NSString *)localizedStringForKey:(NSString *)key;
+
+- (NSString *)localizedStringForKey:(NSString *)key tableName:(NSString *)tableName;
 
 - (UIImage *)ittemInternationalImageWithName:(NSString *)name;
 
