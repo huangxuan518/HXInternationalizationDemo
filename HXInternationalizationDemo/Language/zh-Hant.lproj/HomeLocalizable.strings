@@ -1,0 +1,10 @@
+/* 
+  HomeLocalizable.strings
+  HXInternationalizationDemo
+
+  Created by xiaozhu on 2017/11/9.
+  Copyright © 2017年 黄轩. All rights reserved.
+*/
+"home" = "首頁";
+"welcome" = "你好 世界!";
+"preference" = "偏好";

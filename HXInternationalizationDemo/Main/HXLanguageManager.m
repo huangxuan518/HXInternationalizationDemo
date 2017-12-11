@@ -111,14 +111,22 @@
 }
 
 //获取当前语种下的内容
-- (NSString *)localizedStringForKey:(NSString *)key value:(NSString *)value {
+- (NSString *)localizedStringForKey:(NSString *)key {
+
+    return [self localizedStringForKey:key tableName:NSLocalizedStringTableName];
+}
+
+- (NSString *)localizedStringForKey:(NSString *)key tableName:(NSString *)tableName{
     if (!_bundle) {
         [self initUserLanguage];
+    }
+    if (!tableName) {
+        tableName = NSLocalizedStringTableName;
     }
     
     if (key.length > 0) {
         if (_bundle) {
-            NSString *str = NSLocalizedStringFromTableInBundle(key, NSLocalizedStringTableName, _bundle, value);
+            NSString *str = NSLocalizedStringFromTableInBundle(key, tableName, _bundle, nil);
             if (str.length > 0) {
                 return str;
             }

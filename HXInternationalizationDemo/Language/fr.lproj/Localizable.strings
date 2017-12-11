@@ -6,8 +6,6 @@
   Copyright © 2016年 黄轩. All rights reserved.
 */
 
-"home" = "Page d'accueil";
-"welcome" = "Bonjour le monde!";
-"preference" = "De préférence";
+
 "cancel" = "Annuler";
 "search" = "De recherche";
